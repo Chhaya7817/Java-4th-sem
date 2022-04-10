@@ -1,5 +1,6 @@
 class MaxInBTree {
     Node root;
+    //Print maximum size
     int maxNode(Node root)
     {
    
@@ -7,6 +8,7 @@ class MaxInBTree {
             return Integer.MIN_VALUE;
         return Math.max(root.data,Math.max(maxNode(root.left),maxNode(root.right)));
     }
+
     public static void main(String[] args) {
         MaxInBTree tree=new MaxInBTree();
         tree.root=new Node(10);

@@ -1,12 +1,19 @@
 class BinnaryTreeSize {
     Node root;
-
+//Total number of nodes in the binary tree
     int getSize(Node root)
     {
         if(root==null)
         return 0;
         else
         return 1+getSize(root.left)+getSize(root.right);
+    }
+//Height of Binary tree
+    int height(Node root)
+    {
+        if(root==null) return 0;
+        else
+            return Math.max(height(root.left),height(root.right))+1;
     }
     public static void main(String[] args) {
         BinnaryTreeSize tree=new BinnaryTreeSize();
@@ -19,6 +26,8 @@ class BinnaryTreeSize {
         tree.root.left.right.right=new Node(80);
         tree.root.right.right=new Node(60);
         System.out.println("Size of tree = "+tree.getSize(tree.root));
+        System.out.println("height  of tree = "+tree.height(tree.root));
+
     }
     
 }

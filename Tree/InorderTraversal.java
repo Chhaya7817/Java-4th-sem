@@ -23,7 +23,7 @@ public class InorderTraversal {
         if(root!=null)
         {
             Inorder(root.left);
-            System.out.println(root.data+" ");
+            System.out.print(root.data+" ");
             Inorder(root.right);
         }
     }
@@ -40,7 +40,6 @@ public class InorderTraversal {
         tree.root.left.right.right=new Node(80);
         tree.root.right.right=new Node(60);
         tree.Inorder(tree.root);
-     System.out.println(tree.root.left.right.data);
 
 
         

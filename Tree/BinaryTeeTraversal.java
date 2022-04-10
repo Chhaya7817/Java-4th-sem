@@ -61,7 +61,6 @@ public class BinaryTreeTraversal {
         tree.root.right=new Node(30);
         tree.root.left.left=new Node(40);
         tree.root.left.right=new Node(50);
-        tree.root.left.right=new Node(50);
         tree.root.left.right.left=new Node(70);
         tree.root.left.right.right=new Node(80);
         tree.root.right.right=new Node(60);
