@@ -76,7 +76,7 @@ public class StackSinglyLinkedList {
             System.out.println("press 1 for push ");
             System.out.println("press 2 for pop ");
             System.out.println("press 3 for traverse ");
-            System.out.println("press 4 for pek Element ");
+            System.out.println("press 4 for peek Element ");
             System.out.println("press 5 for exit ");
             System.out.println("Enter your choice:");
             int choice =sc.nextInt();
